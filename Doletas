@@ -10,7 +10,7 @@ class Doletas {
     Double real;
     Scanner entrada = new Scanner(System.in);
     
-    System.out.print("Quantos doletas parceiro? ");
+    System.out.print("Informe quantos dolares deseja converter: ");
     dolar = entrada.nextDouble();
     
     real = dolar * umReal;
