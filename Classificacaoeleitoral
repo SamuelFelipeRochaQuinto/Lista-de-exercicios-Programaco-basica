@@ -1,0 +1,26 @@
+//exercício 18
+
+import java.util.Scanner;
+
+class Classificacaoeleitoral {
+  public static void main(String[] args) {
+    
+    Integer idade;
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("QUAL A IDADE DA PESSOA?: ");
+    idade = entrada.nextInt();
+    
+    if (idade < 16) {
+      System.out.print("Não é eleitor");
+      
+    } else if ( idade == 16 || idade == 17 || idade > 65) {
+      System.out.print("Eleitor facultativo");
+      
+    } else if (idade >= 18 && idade <= 65) {
+      System.out.print("Eleitor obrigatório");
+      
+    }
+    
+  }
+}
