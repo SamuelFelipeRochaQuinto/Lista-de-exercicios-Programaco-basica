@@ -1,0 +1,32 @@
+//exercício 15
+
+import java.util.Scanner;
+
+class Cartesiano {
+  public static void main(String[] args) {
+    
+    Double x1;
+    Double y1;
+    Double x2;
+    Double y2;
+    Double distancia;
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("Informe a coordenada x do primeiro ponto: ");
+    x1 = entrada.nextDouble();
+    
+    System.out.print("Informe a coordenada y do primeiro ponto: ");
+    y1 = entrada.nextDouble();
+    
+    System.out.print("Informe a coordenada x do segundo ponto: ");
+    x2 = entrada.nextDouble();
+    
+    System.out.print("Informe a coordenada y do segundo ponto: ");
+    y2 = entrada.nextDouble();
+    
+    distancia = Math.sqrt(((x1 - x2)*(x1 - x2))+((y1 - y2)*(y1 - y2)));
+    
+    System.out.print("A distância entre os dois ponto é = " + distancia);
+    
+  }
+}
