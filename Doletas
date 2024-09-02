@@ -1,0 +1,21 @@
+//exercício 2
+
+import java.util.Scanner;
+
+class Doletas {
+  public static void main(String[] args) {
+    
+    Double dolar;
+    Double umReal = 4.95;
+    Double real;
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("Quantos doletas parceiro? ");
+    dolar = entrada.nextDouble();
+    
+    real = dolar * umReal;
+    
+    System.out.println(dolar + "US$ é igual a " + real + "R$");
+    
+  }
+}
