@@ -11,10 +11,10 @@ class Nuncapergunteosalariodeumhomem {
     Float salario_liquido;
     Scanner entrada = new Scanner(System.in);
     
-    System.out.print("Quanto que é a hora ( ͡° ͜ʖ ͡°)? ");
+    System.out.print("Quanto que é a hora trabalhada? ");
     valor_hora = entrada.nextFloat();
     
-    System.out.print("E quantas horas você dura ( ͡° ͜ʖ ͡°) por mês? ");
+    System.out.print("E quantas horas você trabalha por mês? ");
     horas_trabalhadas = entrada.nextFloat();
     
     System.out.print("Informe o desconto do INSS: ");
