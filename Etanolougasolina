@@ -1,0 +1,28 @@
+//exercício 11
+
+import java.util.Scanner;
+
+class Etanolougasolina {
+  public static void main(String[] args) {
+    
+    Float etanol_preco;
+    Float gasolina_preco;
+    Float porcentagem_etanol;
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("Informe o preço do etanol: ");
+    etanol_preco = entrada.nextFloat();
+    
+    System.out.print("Informe o preço da gasolina: ");
+    gasolina_preco = entrada.nextFloat();
+    
+    porcentagem_etanol = (etanol_preco*100)/gasolina_preco;
+    
+    if(porcentagem_etanol < 60){
+      System.out.print("O preço do etanol está "+porcentagem_etanol+"% do valor da gasolina, logo vale a pena!");
+    } else {
+      System.out.print("O preço do etanol está "+porcentagem_etanol+"% do valor da gasolina, logo a gasolina fica mais em conta!");
+    }
+    
+  }
+}
