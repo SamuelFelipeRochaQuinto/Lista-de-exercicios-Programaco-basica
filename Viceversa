@@ -1,0 +1,28 @@
+//exercício 6
+
+import java.util.Scanner;
+
+class Viceversa {
+  public static void main(String[] args) {
+    
+    Integer numA;
+    Integer numB;
+    Integer numIntermediario;
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("Digite o número A: ");
+    numA = entrada.nextInt();
+    
+    System.out.print("Digite o número B: ");
+    numB = entrada.nextInt();
+    
+    System.out.print("Invertendo...");
+    
+    numIntermediario = numA;
+    numA = numB;
+    numB = numIntermediario;
+    
+    System.out.print("\nA = " + numA + " B = " + numB);
+    
+  }
+}
