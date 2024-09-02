@@ -1,0 +1,24 @@
+//exercício 10
+
+import java.util.Scanner;
+
+class Calculodahora {
+  public static void main(String[] args) {
+    
+    Integer horas;
+    Integer minutos;
+    Integer resultado;
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("Informe (somente) as horas: ");
+    horas = entrada.nextInt();
+    
+    System.out.print("Informe (somente) os minutos: ");
+    minutos = entrada.nextInt();
+    
+    resultado = horas*60 + minutos;
+    
+    System.out.print("Se passaram "+resultado+" minutos desde as 00:00");
+    
+  }
+}
