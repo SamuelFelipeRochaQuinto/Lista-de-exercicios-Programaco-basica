@@ -1,0 +1,27 @@
+//exercício 4
+
+import java.util.Scanner;
+
+class Mediocre {
+  public static void main(String[] args) {
+    
+    Float num1;
+    Float num2;
+    Float num3;
+    Float media;
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("Fala um número logo! ");
+    num1 = entrada.nextFloat();
+    
+    System.out.print("Mais um! Rápido! ");
+    num2 = entrada.nextFloat();
+    
+    System.out.print("Vai! Fala o último aí! Tenho tempo não! ");
+    num3 = entrada.nextFloat();
+    
+    media = (num1+num2+num3) / 3;
+    System.out.print("A média desses números é: " + media);
+    
+  }
+}
