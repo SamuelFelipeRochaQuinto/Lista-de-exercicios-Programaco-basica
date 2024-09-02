@@ -11,13 +11,13 @@ class Mediocre {
     Float media;
     Scanner entrada = new Scanner(System.in);
     
-    System.out.print("Fala um número logo! ");
+    System.out.print("Digite algum número: ");
     num1 = entrada.nextFloat();
     
-    System.out.print("Mais um! Rápido! ");
+    System.out.print("Digite outro número: ");
     num2 = entrada.nextFloat();
     
-    System.out.print("Vai! Fala o último aí! Tenho tempo não! ");
+    System.out.print("Digite o último número: ");
     num3 = entrada.nextFloat();
     
     media = (num1+num2+num3) / 3;
