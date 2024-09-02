@@ -14,7 +14,7 @@ class Redondo {
     raio = entrada.nextDouble();
     
     area = pi * raio * raio;
-    System.out.print("A área do ser redondo é " + area + "cm2.");
+    System.out.print("A área do circulo é = " + area + "cm2.");
     
   }
 }
