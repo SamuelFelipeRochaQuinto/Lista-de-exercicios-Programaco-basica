@@ -1,0 +1,45 @@
+//exercício 20
+
+import java.util.Scanner;
+
+class Desconto {
+  public static void main(String[] args) {
+    
+    String produto;
+    Double quantia;
+    Double preco_unitario;
+    Double total;
+    Double desconto;
+    Double preco_final;
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("Informe o nome do produto: ");
+    produto = entrada.nextLine();
+    
+    System.out.print("Informe a quantidade adquirida: ");
+    quantia = entrada.nextDouble();
+    
+    System.out.print("Informe o preço unitário do produto: ");
+    preco_unitario = entrada.nextDouble();
+   
+    total = quantia * preco_unitario;
+    
+    if (quantia <= 5) {
+      desconto = (2*total)/100;
+      
+    } else if (quantia > 5 && quantia <= 10) {
+      desconto = (3*total)/100;
+        
+    } else if (quantia > 10 && quantia < 30) {
+      desconto = (5*total)/100;
+      
+    } else {
+      desconto = (10*total)/100;
+    }
+    
+    preco_final = quantia - desconto;
+    
+    System.out.print("O total da compra deu: "+total+"R$ mas com o desconto de "+((desconto*100)/total)+"%, então o seu total a pagar será de "+preco_final+"R$.");
+    
+  }
+}
