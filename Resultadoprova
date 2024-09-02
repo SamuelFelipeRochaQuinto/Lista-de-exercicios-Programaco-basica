@@ -1,0 +1,33 @@
+//exercício 16
+
+import java.util.Scanner;
+
+class Resultadoprova {
+  public static void main(String[] args) {
+    
+    Float nota1;
+    Float nota2;
+    Float nota3;
+    Float media;
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("Informe a nota da sua primeira avaliação: ");
+    nota1 = entrada.nextFloat();
+    
+    System.out.print("Informe a nota da sua segunda avaliação: ");
+    nota2 = entrada.nextFloat();
+    
+    System.out.print("Informe a nota da sua terceira avaliação: ");
+    nota3 = entrada.nextFloat();
+    
+    media = (nota1+nota2+nota3)/3;
+    System.out.print("sua média foi = "+media);
+    
+    if (media >= 7) {
+      System.out.print("\nVocê foi aprovado!");
+    } else {
+      System.out.print("\nVocê não foi aprovado");
+    }
+    
+  }
+}
