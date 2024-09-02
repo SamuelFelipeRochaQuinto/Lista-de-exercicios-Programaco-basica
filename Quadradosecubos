@@ -1,0 +1,31 @@
+//exercício 7
+
+import java.util.Scanner;
+
+class Quadradosecubos {
+  public static void main(String[] args) {
+    
+    Integer numero;
+    Integer quadrado;
+    Integer cubo;
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("Digite um número de 0 a 10: ");
+    numero = entrada.nextInt();
+   
+    while (numero < 0 || numero > 10) {
+      System.out.print("Número invalido, por favor digite outro: ");
+      numero = entrada.nextInt();
+     
+    }
+    
+    if (numero >= 0 && numero <= 10) {
+      quadrado = numero * numero;
+      cubo = numero * numero * numero;
+      
+      System.out.printf("Numero = %d Quadrado = %d Cubo = %d", numero , quadrado , cubo);
+      
+     }
+    
+  }
+}
