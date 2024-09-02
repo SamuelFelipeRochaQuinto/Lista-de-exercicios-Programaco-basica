@@ -1,0 +1,38 @@
+//exercícios 12 e 13
+
+import java.util.Scanner;
+
+class Ceramica {
+  public static void main(String[] args) {
+    
+    Double largura;
+    Double comprimento;
+    Double area;
+    Double revestimento;
+    Double total;
+    Double metroquadrado;
+    Double total_pago;
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("Informe a largura (em metros) da obra: ");
+    largura = entrada.nextDouble();
+    
+    System.out.print("Informe o comprimento (em metros) da obra: ");
+    comprimento = entrada.nextDouble();
+    
+    area = (Math.ceil((largura*comprimento)));
+    revestimento = area*10/100;
+    
+    total = Math.ceil(area + revestimento);
+    
+    System.out.print("O total do revestimento será = " + total + "m2");
+    
+    System.out.print("\nInsira o valor do metro quadrado: ");
+    metroquadrado = entrada.nextDouble();
+    
+    total_pago = total * metroquadrado;
+    
+    System.out.print("O total a ser pago será = " + total_pago +"R$");
+    
+  }
+}
