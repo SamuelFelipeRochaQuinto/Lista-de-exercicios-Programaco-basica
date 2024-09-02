@@ -1,0 +1,32 @@
+//exercício 9
+
+import java.util.Scanner;
+
+class Precocanetas {
+  public static void main(String[] args) {
+    
+    Float canetas;
+    Float nota;
+    Float troco;
+    Float valor_caneta;
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("Informe quantas canetas foram compradas: ");
+    canetas = entrada.nextFloat();
+    
+    System.out.print("Uma nota de quantos reais foi usada: ");
+    nota = entrada.nextFloat();
+    
+    System.out.print("Informe quanto foi o troco: ");
+    troco = entrada.nextFloat();
+    
+    System.out.print("Gerando probleminha...");
+    System.out.print("\nCompraram-se "+canetas+" canetas iguais, que foram pagas com uma nota de "+nota+" reais, obtendo-se "+troco+" reais como troco. Quanto custou cada caneta?");
+    System.out.print("\nCalculando...");
+    
+    valor_caneta = (nota-troco)/canetas;
+    
+    System.out.print("\nCada caneta custa "+valor_caneta+"R$");
+    
+  }
+}
