@@ -1,0 +1,27 @@
+//exercício 5
+
+import java.util.Scanner;
+
+class Nuncapergunteosalariodeumhomem {
+  public static void main(String[] args) {
+    
+    Float valor_hora;
+    Float horas_trabalhadas;
+    Float desconto_inss;
+    Float salario_liquido;
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("Quanto que é a hora ( ͡° ͜ʖ ͡°)? ");
+    valor_hora = entrada.nextFloat();
+    
+    System.out.print("E quantas horas você dura ( ͡° ͜ʖ ͡°) por mês? ");
+    horas_trabalhadas = entrada.nextFloat();
+    
+    System.out.print("Informe o desconto do INSS: ");
+    desconto_inss = entrada.nextFloat();
+    
+    salario_liquido = (valor_hora * horas_trabalhadas) - (valor_hora * horas_trabalhadas * desconto_inss / 100);
+    System.out.print("Seu salário líquido é de " + salario_liquido + "R$");
+    
+  }
+}
