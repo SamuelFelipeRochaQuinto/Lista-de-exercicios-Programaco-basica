@@ -1,0 +1,63 @@
+//exercício 19
+
+import java.util.Scanner;
+
+public class Caixaeletronico {
+    public static void main(String[] args) {
+      
+      Integer opcao;
+      Double saldo = 1000.00;
+      String extrato = "Extrato inicial\n";
+      Scanner entrada = new Scanner(System.in);
+
+        while (true) {
+            System.out.print("Menu do Caixa Eletrônico:");
+            System.out.print("\n1. Exibir saldo");
+            System.out.print("\n2. Exibir extrato");
+            System.out.print("\n3. Realizar depósito");
+            System.out.print("\n4. Realizar saque");
+            System.out.print("\n5. Sair");
+            System.out.print("\nEscolha uma opção: ");
+            
+            opcao = entrada.nextInt();
+            
+            switch (opcao) {
+                case 1:
+                    System.out.println("Seu saldo é: R$ " + saldo);
+                    break;
+                
+                case 2:
+                    System.out.println("Seu extrato é:\n" + extrato);
+                    break;
+                
+                case 3:
+                    System.out.print("\nInforme o valor para depósito: ");
+                    double deposito = entrada.nextDouble();
+                    saldo += deposito;
+                    extrato += "Depósito: R$ " + deposito + "\n";
+                    System.out.println("Depósito realizado com sucesso!");
+                    break;
+                
+                case 4:
+                    System.out.print("\nInforme o valor para saque: ");
+                    double saque = entrada.nextDouble();
+                    if (saque <= saldo) {
+                        saldo -= saque;
+                        extrato += "Saque: R$ " + saque + "\n";
+                        System.out.println("Saque realizado com sucesso!");
+                    } else {
+                        System.out.println("Saldo insuficiente para realizar o saque.");
+                    }
+                    break;
+                
+                case 5:
+                    System.out.print("Saindo do sistema. Obrigado por usar o caixa eletrônico!");
+                    return;
+                
+                default:
+                    System.out.print("Opção inválida. Saindo do programa.");
+                    return;
+            }
+        }
+    }
+}
