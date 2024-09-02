@@ -1,0 +1,34 @@
+//exercício 17
+
+import java.util.Scanner;
+
+class Votos {
+  public static void main(String[] args) {
+    
+    Float votos_brancos;
+    Float b_porcentagem;
+    Float votos_nulos;
+    Float n_porcetagem;
+    Float votos_validos;
+    Float v_porcentagem;
+    Float total;
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("Informe a quantidade de votos brancos: ");
+    votos_brancos = entrada.nextFloat();
+    
+    System.out.print("Informe a quantidade de votos nulos: ");
+    votos_nulos = entrada.nextFloat();
+    
+    System.out.print("Informe a quantidade de votos válidos: ");
+    votos_validos = entrada.nextFloat();
+    
+    total = votos_brancos + votos_nulos + votos_validos;
+    b_porcentagem = (votos_brancos*100)/total;
+    n_porcetagem = (votos_nulos*100)/total;
+    v_porcentagem = (votos_validos*100)/total;
+    
+    System.out.print("Votos brancos representam "+b_porcentagem+"%, votos nulos representam "+n_porcetagem+"%, e os votos validos representam "+v_porcentagem+"%.");
+    
+  }
+}
